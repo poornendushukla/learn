@@ -1,7 +1,7 @@
 
-const STORAGE_NAMESPACE = '0411fad7-b673-490a-85e5-3a276db31bfd';
+const STORAGE_NAMESPACE = 'namespace-hash';
 class StorageAdapter {
-	private appStorageKey: string = v5('idmc-fabric_ext', STORAGE_NAMESPACE);
+	private appStorageKey: string = v5('namespace', STORAGE_NAMESPACE);
 	constructor(private store: Storage) {}
 	/**
 	 * Returns value of key is available in storage.
